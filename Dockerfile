@@ -32,7 +32,7 @@ RUN ALPINE_GLIBC_BASE_URL="https://github.com/sgerrand/alpine-pkg-glibc/releases
     /usr/glibc-compat/bin/localedef --force --inputfile POSIX --charmap UTF-8 "$LANG" || true && \
     echo "export LANG=$LANG" > /etc/profile.d/locale.sh && \
     echo "**** Install Mono from Arch Testing repo ****" && \
-    wget -q "https://www.archlinux.org/packages/testing/x86_64/mono/download/" -O "/tmp/mono.pkg.tar.xz" && \
+    wget -q "https://www.archlinux.org/packages/extra/x86_64/mono/download/" -O "/tmp/mono.pkg.tar.xz" && \
     tar -xJf "/tmp/mono.pkg.tar.xz" && \
     echo "**** Install Pre-Built FFmpeg ****" && \
     wget -q https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-64bit-static.tar.xz && \
