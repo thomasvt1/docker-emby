@@ -37,7 +37,7 @@ RUN ALPINE_GLIBC_BASE_URL="https://github.com/sgerrand/alpine-pkg-glibc/releases
     echo "**** Install Pre-Built FFmpeg ****" && \
     wget -q https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-64bit-static.tar.xz && \
     tar xf ffmpeg-release-64bit-static.tar.xz && \
-    mv ffmpeg-*/ffmpeg ffmpeg-*/ffserver ffmpeg-*/ffprobe /usr/bin/ && \
+    mv ffmpeg-*/ffmpeg ffmpeg-*/ffprobe /usr/bin/ && \
     cert-sync /etc/ssl/certs/ca-certificates.crt && \
     echo "**** Install Emby by version tag ****" && \
     mkdir -p \
